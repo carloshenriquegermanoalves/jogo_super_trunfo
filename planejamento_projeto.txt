@@ -1,0 +1,116 @@
+Projeto Super Trunfo - Esqueleto do Programa:
+
+Tema:
+	- Naruto
+
+Pontos de avaliação:
+	- Conteúdos aprendidos em sala
+	- Explicação e organização
+		-- O que não fazer:
+			- Números mágicos
+			- Repetições desnecessárias
+		-- O que fazer para evitar os problemas acima:
+			- Usar variáveis
+			- Enxugar o código
+	- Anotações
+		- Comentários
+Regras:
+	- Cartas:
+		- 20 cartas
+		- 3 características diferentes
+	- Jogadores:
+		- 2 jogadores
+		- 4 cartas sorteadas aleatoriamente, empilhadas e ocultas em uma sequência
+		- As outras cartas ficarão em uma pilha central
+	- Resultados das partidas:
+		- O vencedor terá sua pontuação aumentada pela diferença das análises
+		- O perdedor perderá a diferença (subtração) de pontos das análises
+	- Jogabilidade:
+		- As duas cartas usadas vão para debaixo da pilha do jogador vencedor
+		- Em caso de empate, a rodada é anulada e recebem novas cartas da pilha central
+		- Uma característica pode ser escolhida mais de uma vez seguidas
+		- As novas cartas são indicadas na tela
+		- O vencedor será aquele que tiver a maior quantidade de pontos ao término de 4 rodadas
+		- Em caso de saldo igual, será decretado empate
+Código:
+	- Front:
+		- Bibliotecas usadas:
+			- Integradas:
+				- Random:
+					- Gerar valores aleatórios para as características das cartas
+				- Time:
+					- Temporizador das rodadas
+			- Não Integradas:
+				- Os:
+					- Limpar o terminal a cada fim de rodada
+		- Funções:
+			- exibe_valores:
+				- Exibe os valores das características das cartas
+	- Back:
+		- Funções:
+			- gera_valores:
+				- Gerará os valores aleatóriamente dos atributos das cartas;
+				- Os valores podem variar entre 10 e 100;
+				- Retornar os valores gerados respectivamente
+			- gera_cartas:
+				- Adiciona as características da carta em uma lista
+			- calcula_pontos_jogadores:
+				- Parâmetros:
+					- ponto do vencedor
+					- característica vencedora
+					- característica perdedora (opcional no caso do perdedor)	
+				- Calcula os pontos do vencedor
+				- Calcula os pontos do perdedor
+		- Jogabilidade:
+			- embaralhar:
+				- função shuffle
+			- sortear cartas:
+				- função choice
+			- remover cartas selecionadas:
+				- função del ou remove
+		- condicionais:
+			- se pontos iguais entre jogadores:
+				- empate
+					- sortear cartas
+						- Observar jogabilidade.sortear cartas	
+		- laços de repetição:
+			- sistema_de_turnos:
+				- define a vez dos jogadores
+Padronizações:
+	- Escopo de variáveis e funções:
+		- Snake_case
+	- Formatação de string:
+		- Aspas duplas
+		- fstring
+Atividades:
+	- Carlos:
+		- gerar funções:
+			- gerar_valores
+			- gerar_cartas
+			- calcula_pontos_jogadores
+	- Isaac:
+		- Código Principal:
+			- Condicionais:
+				- Em caso de empate
+			- Laços de repetição
+				- sistema_de_turnos
+			- Embaralhar as cartas
+	- Samuel:
+		- Interação Homem-Máquina:
+			- Menu:
+				- Carlos:
+					- Escrita das instruções
+				- Samuel:
+					- Exibir instruções
+			- Empilhar as cartas:
+				- Ordenar as listas
+			- Ocultar as cartas
+Prazos:
+	- Carlos:
+		- 05/12/2022 - 07/12/2022
+	- Isaac:
+		- 08/12/2022 - 10/12/2022
+	- Samuel:
+		- 05/12/2022 - 08/12/2022
+GitHub:
+	- 
